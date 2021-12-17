@@ -5,8 +5,10 @@ class PopularCard extends StatelessWidget {
   final String nameFood;
   final String jarak;
   final String image;
+  final String rating;
   const PopularCard({
     Key? key,
+    required this.rating,
     required this.image,
     required this.nameFood,
     required this.jarak,
@@ -68,7 +70,7 @@ class PopularCard extends StatelessWidget {
                     size: 15,
                   ),
                   Text(
-                    '4.5',
+                    rating,
                     style: greyTextStyle.copyWith(fontSize: 12),
                   )
                 ],
