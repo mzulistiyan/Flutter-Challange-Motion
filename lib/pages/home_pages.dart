@@ -325,17 +325,20 @@ class _HomePageState extends State<HomePage> {
             PopularCard(
               image: 'assets/popular_food1.png',
               nameFood: 'Pizza Hut',
-              jarak: '4.5',
+              jarak: '3.4',
+              rating: '4.5',
             ),
             PopularCard(
               image: 'assets/popular_food2.png',
               nameFood: 'KFC',
               jarak: '4.8',
+              rating: '4.7',
             ),
             PopularCard(
               image: 'assets/popular_food3.png',
               nameFood: 'McDonald',
-              jarak: '4.5',
+              jarak: '8.9',
+              rating: '4.6',
             )
           ],
         ),
@@ -372,19 +375,20 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: SafeArea(
-          child: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(padding: EdgeInsets.only(top: 20)),
-            header(),
-            banner(),
-            category(),
-            promo(),
-            popular(),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(padding: EdgeInsets.only(top: 20)),
+              header(),
+              banner(),
+              category(),
+              promo(),
+              popular(),
+            ],
+          ),
         ),
-      )),
+      ),
     );
   }
 }
